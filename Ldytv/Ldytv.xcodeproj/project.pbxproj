@@ -10,10 +10,10 @@
 		AB5FD7EC1DC345C600ADB179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */; };
 		AB5FD7EE1DC345C600ADB179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD7ED1DC345C600ADB179 /* ViewController.swift */; };
 		AB5FD7F11DC345C600ADB179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5FD7EF1DC345C600ADB179 /* Main.storyboard */; };
-		AB5FD7F31DC345C600ADB179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5FD7F21DC345C600ADB179 /* Assets.xcassets */; };
 		AB5FD7F61DC345C600ADB179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5FD7F41DC345C600ADB179 /* LaunchScreen.storyboard */; };
 		AB5FD8011DC345C600ADB179 /* LdytvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD8001DC345C600ADB179 /* LdytvTests.swift */; };
 		AB5FD80C1DC345C600ADB179 /* LdytvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD80B1DC345C600ADB179 /* LdytvUITests.swift */; };
+		AB8806121DC6E28700487318 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8806111DC6E28700487318 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB5FD7ED1DC345C600ADB179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB5FD7F01DC345C600ADB179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AB5FD7F21DC345C600ADB179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB5FD7F51DC345C600ADB179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB5FD7F71DC345C600ADB179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB5FD7FC1DC345C600ADB179 /* LdytvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LdytvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		AB5FD8071DC345C600ADB179 /* LdytvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LdytvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5FD80B1DC345C600ADB179 /* LdytvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LdytvUITests.swift; sourceTree = "<group>"; };
 		AB5FD80D1DC345C600ADB179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8806111DC6E28700487318 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +97,13 @@
 		AB5FD7EA1DC345C600ADB179 /* Ldytv */ = {
 			isa = PBXGroup;
 			children = (
-				AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */,
+				AB8806131DC6E44D00487318 /* Classes */,
 				AB5FD7ED1DC345C600ADB179 /* ViewController.swift */,
+				AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */,
 				AB5FD7EF1DC345C600ADB179 /* Main.storyboard */,
-				AB5FD7F21DC345C600ADB179 /* Assets.xcassets */,
 				AB5FD7F41DC345C600ADB179 /* LaunchScreen.storyboard */,
 				AB5FD7F71DC345C600ADB179 /* Info.plist */,
+				AB8806111DC6E28700487318 /* Images.xcassets */,
 			);
 			path = Ldytv;
 			sourceTree = "<group>";
@@ -123,6 +124,61 @@
 				AB5FD80D1DC345C600ADB179 /* Info.plist */,
 			);
 			path = LdytvUITests;
+			sourceTree = "<group>";
+		};
+		AB8806131DC6E44D00487318 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB8806141DC6E45400487318 /* Main */,
+				AB8806151DC6E45B00487318 /* Home */,
+				AB8806161DC6E47100487318 /* Live */,
+				AB8806171DC6E4A100487318 /* Follow */,
+				AB8806181DC6E4A800487318 /* Profile */,
+				AB8806191DC6E4AE00487318 /* Tools */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		AB8806141DC6E45400487318 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		AB8806151DC6E45B00487318 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		AB8806161DC6E47100487318 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Live;
+			sourceTree = "<group>";
+		};
+		AB8806171DC6E4A100487318 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Follow;
+			sourceTree = "<group>";
+		};
+		AB8806181DC6E4A800487318 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		AB8806191DC6E4AE00487318 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB5FD7F61DC345C600ADB179 /* LaunchScreen.storyboard in Resources */,
-				AB5FD7F31DC345C600ADB179 /* Assets.xcassets in Resources */,
+				AB8806121DC6E28700487318 /* Images.xcassets in Resources */,
 				AB5FD7F11DC345C600ADB179 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,11 +468,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Ldytv/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boxfish.Ldytv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,11 +483,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Ldytv/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boxfish.Ldytv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -505,6 +567,7 @@
 				AB5FD8121DC345C600ADB179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB5FD8131DC345C600ADB179 /* Build configuration list for PBXNativeTarget "LdytvTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +576,7 @@
 				AB5FD8151DC345C600ADB179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB5FD8161DC345C600ADB179 /* Build configuration list for PBXNativeTarget "LdytvUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +585,7 @@
 				AB5FD8181DC345C600ADB179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
