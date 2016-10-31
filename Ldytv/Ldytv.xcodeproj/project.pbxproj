@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AB5FD7EC1DC345C600ADB179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */; };
-		AB5FD7EE1DC345C600ADB179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD7ED1DC345C600ADB179 /* ViewController.swift */; };
 		AB5FD7F11DC345C600ADB179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5FD7EF1DC345C600ADB179 /* Main.storyboard */; };
 		AB5FD7F61DC345C600ADB179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5FD7F41DC345C600ADB179 /* LaunchScreen.storyboard */; };
 		AB5FD8011DC345C600ADB179 /* LdytvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD8001DC345C600ADB179 /* LdytvTests.swift */; };
 		AB5FD80C1DC345C600ADB179 /* LdytvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD80B1DC345C600ADB179 /* LdytvUITests.swift */; };
 		AB8806121DC6E28700487318 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8806111DC6E28700487318 /* Images.xcassets */; };
+		AB8806281DC6FA0E00487318 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8806271DC6FA0E00487318 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		AB5FD7E81DC345C600ADB179 /* Ldytv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ldytv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB5FD7ED1DC345C600ADB179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB5FD7F01DC345C600ADB179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB5FD7F51DC345C600ADB179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB5FD7F71DC345C600ADB179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		AB5FD80B1DC345C600ADB179 /* LdytvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LdytvUITests.swift; sourceTree = "<group>"; };
 		AB5FD80D1DC345C600ADB179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB8806111DC6E28700487318 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB8806271DC6FA0E00487318 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = Classes/Main/MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				AB8806131DC6E44D00487318 /* Classes */,
-				AB5FD7ED1DC345C600ADB179 /* ViewController.swift */,
 				AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */,
 				AB5FD7EF1DC345C600ADB179 /* Main.storyboard */,
 				AB5FD7F41DC345C600ADB179 /* LaunchScreen.storyboard */,
@@ -142,6 +141,7 @@
 		AB8806141DC6E45400487318 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AB8806271DC6FA0E00487318 /* MainTabBarController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -315,8 +315,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5FD7EE1DC345C600ADB179 /* ViewController.swift in Sources */,
 				AB5FD7EC1DC345C600ADB179 /* AppDelegate.swift in Sources */,
+				AB8806281DC6FA0E00487318 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
