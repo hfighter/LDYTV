@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         setNavigationBar()
+//        launchScreen()
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,5 +56,19 @@ extension HomeViewController {
     
     @objc private func qrCodeItemClick() {
         print("qrCodeItemClick")
+    }
+}
+
+// MARK: - 启动动画--test
+extension HomeViewController {
+    fileprivate func launchScreen() {
+        let view = UIView(frame: CGRect(origin: CGPoint(x: 50, y: 100), size: CGSize(width: 40, height: 40)))
+        view.backgroundColor = UIColor.red
+        UIApplication.shared.keyWindow?.addSubview(view)
+        UIView.animate(withDuration: 0.3, delay: 1, options: .curveEaseInOut, animations: {
+            view.center = CGPoint(x: 150, y: 200)
+        }) { (Bool) in
+            view.removeFromSuperview()
+        }
     }
 }
