@@ -12,7 +12,11 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = ""
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,3 +24,5 @@ class MainTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+

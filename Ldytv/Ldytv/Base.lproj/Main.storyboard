@@ -27,35 +27,6 @@
             <point key="canvasLocation" x="-1695" y="71"/>
         </scene>
         <!--Table View Controller-->
-        <scene sceneID="een-c7-Ci7">
-            <objects>
-                <tableViewController id="GfH-gN-Vtj" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cs1-4f-m4S">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hV5-tc-E4H">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hV5-tc-E4H" id="GC0-Hv-H6G">
-                                    <frame key="frameInset" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="GfH-gN-Vtj" id="RGT-jD-926"/>
-                            <outlet property="delegate" destination="GfH-gN-Vtj" id="QIA-Ya-z8h"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="HAR-sU-Dmf"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G19-qH-ipQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="287" y="-534"/>
-        </scene>
-        <!--Table View Controller-->
         <scene sceneID="iQb-SR-ckD">
             <objects>
                 <tableViewController id="hr5-oE-aIF" sceneMemberID="viewController">
@@ -146,7 +117,9 @@
         <scene sceneID="uGO-4I-QEP">
             <objects>
                 <navigationController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EZj-9g-7fH" customClass="ProfileViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" image="btn_user_normal" selectedImage="btn_user_selected" id="prq-Cf-ZUS"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="btn_user_normal" selectedImage="btn_user_selected" id="prq-Cf-ZUS">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="m2a-9i-YLJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -163,7 +136,9 @@
         <scene sceneID="EMP-OS-Shn">
             <objects>
                 <navigationController storyboardIdentifier="FollowViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eLh-X4-VfV" customClass="FollowViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="关注" image="btn_live_normal" selectedImage="btn_live_selected" id="kgA-fv-OOR"/>
+                    <tabBarItem key="tabBarItem" title="关注" image="btn_live_normal" selectedImage="btn_live_selected" id="kgA-fv-OOR">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GXA-tk-TGG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -180,7 +155,9 @@
         <scene sceneID="vHG-ou-6Cj">
             <objects>
                 <navigationController storyboardIdentifier="LiveViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w00-jb-U3j" customClass="LiveViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="直播" image="btn_column_normal" selectedImage="btn_column_selected" id="06o-9a-hXk"/>
+                    <tabBarItem key="tabBarItem" title="直播" image="btn_column_normal" selectedImage="btn_column_selected" id="06o-9a-hXk">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5gn-vT-diR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -196,19 +173,31 @@
         <!--首页-->
         <scene sceneID="HiM-2i-NLD">
             <objects>
-                <navigationController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zro-Ia-VkH" customClass="HomeViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" selectedImage="btn_home_selected" id="xPz-cW-x65"/>
+                <navigationController storyboardIdentifier="HomeNavViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zro-Ia-VkH" customClass="HomeNavViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" selectedImage="btn_home_selected" id="xPz-cW-x65">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jwz-ct-A75">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="GfH-gN-Vtj" kind="relationship" relationship="rootViewController" id="ily-25-ein"/>
+                        <segue destination="HGm-Xu-bdv" kind="relationship" relationship="rootViewController" id="lVt-Wo-fu3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRe-IB-tIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-623" y="-535"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="mSb-WR-Flx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HGm-Xu-bdv" customClass="HomeViewController" customModule="Ldytv" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0aQ-YR-xiJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91M-W6-1gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="-534"/>
         </scene>
     </scenes>
     <resources>
