@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3DB8C45E31F801A2420822 /* Pods_Ldytv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE149F058303307A0B181982 /* Pods_Ldytv.framework */; };
 		AB5FD7EC1DC345C600ADB179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */; };
 		AB5FD7F11DC345C600ADB179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5FD7EF1DC345C600ADB179 /* Main.storyboard */; };
 		AB5FD7F61DC345C600ADB179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5FD7F41DC345C600ADB179 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113BCC56B9DCF21307C9B915 /* Pods-Ldytv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ldytv.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ldytv/Pods-Ldytv.release.xcconfig"; sourceTree = "<group>"; };
+		89192678913759E6FF521D0F /* Pods-Ldytv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ldytv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ldytv/Pods-Ldytv.debug.xcconfig"; sourceTree = "<group>"; };
 		AB5FD7E81DC345C600ADB179 /* Ldytv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ldytv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB5FD7F01DC345C600ADB179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		AB6DB34E1DC86D9C0073C1A7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Classes/Profile/ProfileViewController.swift; sourceTree = "<group>"; };
 		AB8806111DC6E28700487318 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB8806271DC6FA0E00487318 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = Classes/Main/MainTabBarController.swift; sourceTree = "<group>"; };
+		AE149F058303307A0B181982 /* Pods_Ldytv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ldytv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3DB8C45E31F801A2420822 /* Pods_Ldytv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302306C61477A02F9A4363DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE149F058303307A0B181982 /* Pods_Ldytv.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CC1F0B5862BB530A16E4F11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89192678913759E6FF521D0F /* Pods-Ldytv.debug.xcconfig */,
+				113BCC56B9DCF21307C9B915 /* Pods-Ldytv.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AB5FD7DF1DC345C600ADB179 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +121,8 @@
 				AB5FD7FF1DC345C600ADB179 /* LdytvTests */,
 				AB5FD80A1DC345C600ADB179 /* LdytvUITests */,
 				AB5FD7E91DC345C600ADB179 /* Products */,
+				4CC1F0B5862BB530A16E4F11 /* Pods */,
+				302306C61477A02F9A4363DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB5FD8101DC345C600ADB179 /* Build configuration list for PBXNativeTarget "Ldytv" */;
 			buildPhases = (
+				F7ED3F3596EB47690C12DAB8 /* [CP] Check Pods Manifest.lock */,
 				AB5FD7E41DC345C600ADB179 /* Sources */,
 				AB5FD7E51DC345C600ADB179 /* Frameworks */,
 				AB5FD7E61DC345C600ADB179 /* Resources */,
+				8D924D09CA9ED092BF95C4A7 /* [CP] Embed Pods Frameworks */,
+				3E30CDCDAE34875E99040C43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,6 +375,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E30CDCDAE34875E99040C43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ldytv/Pods-Ldytv-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D924D09CA9ED092BF95C4A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ldytv/Pods-Ldytv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7ED3F3596EB47690C12DAB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB5FD7E41DC345C600ADB179 /* Sources */ = {
@@ -510,6 +585,7 @@
 		};
 		AB5FD8111DC345C600ADB179 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89192678913759E6FF521D0F /* Pods-Ldytv.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -525,6 +601,7 @@
 		};
 		AB5FD8121DC345C600ADB179 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 113BCC56B9DCF21307C9B915 /* Pods-Ldytv.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
