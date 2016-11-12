@@ -30,11 +30,11 @@ extension HomeViewController {
         setRightNavigationBar()
     }
     
-    private func setLeftNavigationBar() {
+    fileprivate func setLeftNavigationBar() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "logo")?.withRenderingMode(.alwaysOriginal), style: .done, target: self, action: #selector(leftButtonClick))
     }
     
-    private func setRightNavigationBar() {
+    fileprivate func setRightNavigationBar() {
         let size: CGSize = CGSize(width: 40, height: 40)
         let historyItem: UIBarButtonItem = UIBarButtonItem(imageName: "image_my_history", highImageName: "image_my_history_click", size: size, target: self, action: #selector(historyItemClick))
         let searchItem: UIBarButtonItem = UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_click", size: size, target: self, action: #selector(searchItemClick))
@@ -42,19 +42,19 @@ extension HomeViewController {
         navigationItem.rightBarButtonItems = [historyItem, searchItem, qrcodeItem]
     }
     
-    @objc private func leftButtonClick() {
+    @objc fileprivate func leftButtonClick() {
         print("leftButtonClick")
     }
     
-    @objc private func historyItemClick() {
+    @objc fileprivate func historyItemClick() {
         print("historyItemClick")
     }
     
-    @objc private func searchItemClick() {
+    @objc fileprivate func searchItemClick() {
         print("searchItemClick")
     }
     
-    @objc private func qrCodeItemClick() {
+    @objc fileprivate func qrCodeItemClick() {
         print("qrCodeItemClick")
     }
 }

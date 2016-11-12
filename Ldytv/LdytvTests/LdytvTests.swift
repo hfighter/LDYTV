@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Ldytv
+//@testable import Ldytv
 
 class LdytvTests: XCTestCase {
     

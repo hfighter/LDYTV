@@ -30,13 +30,13 @@ class MainTabBarController: UITabBarController {
 extension MainTabBarController {
     
     fileprivate func addControllers() {
-        addControllerByStoryBoardName(storyboardName: "Home")
-        addControllerByStoryBoardName(storyboardName: "Live")
-        addControllerByStoryBoardName(storyboardName: "Follow")
-        addControllerByStoryBoardName(storyboardName: "Profile")
+        addControllerByStoryBoardName("Home")
+        addControllerByStoryBoardName("Live")
+        addControllerByStoryBoardName("Follow")
+        addControllerByStoryBoardName("Profile")
     }
     
-    private func addControllerByStoryBoardName(storyboardName: String) {
+    fileprivate func addControllerByStoryBoardName(_ storyboardName: String) {
         let instantiateViewControllerName: String = storyboardName + "NavViewController"
         let viewController = UIStoryboard(name: storyboardName, bundle: nil).instantiateViewController(withIdentifier: instantiateViewControllerName)
         addChildViewController(viewController)

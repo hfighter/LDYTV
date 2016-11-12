@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B8EA1BD1DD71EED00183E9C /* RGPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EA1BC1DD71EED00183E9C /* RGPageViewController.swift */; };
+		7B8EA1C61DD7227800183E9C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EA1C51DD7227800183E9C /* HomePageViewController.swift */; };
+		7B8EA1C81DD7255500183E9C /* RecomendViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EA1C71DD7255500183E9C /* RecomendViewController.storyboard */; };
+		7B8EA1CA1DD725CC00183E9C /* GamesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EA1C91DD725CC00183E9C /* GamesViewController.storyboard */; };
+		7B8EA1CC1DD7261700183E9C /* EntertainmentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EA1CB1DD7261700183E9C /* EntertainmentViewController.storyboard */; };
+		7B8EA1CE1DD7264E00183E9C /* FunsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EA1CD1DD7264E00183E9C /* FunsViewController.storyboard */; };
+		7B8EA1D01DD7268800183E9C /* RecomendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EA1CF1DD7268800183E9C /* RecomendViewController.swift */; };
+		7B8EA1D21DD7279800183E9C /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EA1D11DD7279800183E9C /* GamesViewController.swift */; };
+		7B8EA1D41DD727C100183E9C /* EntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EA1D31DD727C100183E9C /* EntertainmentViewController.swift */; };
+		7B8EA1D61DD727D400183E9C /* FunsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EA1D51DD727D400183E9C /* FunsViewController.swift */; };
 		9B3DB8C45E31F801A2420822 /* Pods_Ldytv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE149F058303307A0B181982 /* Pods_Ldytv.framework */; };
 		AB5FD7EC1DC345C600ADB179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */; };
 		AB5FD7F11DC345C600ADB179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5FD7EF1DC345C600ADB179 /* Main.storyboard */; };
@@ -45,6 +55,16 @@
 
 /* Begin PBXFileReference section */
 		113BCC56B9DCF21307C9B915 /* Pods-Ldytv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ldytv.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ldytv/Pods-Ldytv.release.xcconfig"; sourceTree = "<group>"; };
+		7B8EA1BC1DD71EED00183E9C /* RGPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGPageViewController.swift; path = Classes/Tools/PageViewController/RGPageViewController.swift; sourceTree = "<group>"; };
+		7B8EA1C51DD7227800183E9C /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Classes/Home/PageController/HomePageViewController.swift; sourceTree = "<group>"; };
+		7B8EA1C71DD7255500183E9C /* RecomendViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RecomendViewController.storyboard; path = Classes/Home/PageController/RecomendViewController.storyboard; sourceTree = "<group>"; };
+		7B8EA1C91DD725CC00183E9C /* GamesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GamesViewController.storyboard; path = Classes/Home/PageController/GamesViewController.storyboard; sourceTree = "<group>"; };
+		7B8EA1CB1DD7261700183E9C /* EntertainmentViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EntertainmentViewController.storyboard; path = Classes/Home/PageController/EntertainmentViewController.storyboard; sourceTree = "<group>"; };
+		7B8EA1CD1DD7264E00183E9C /* FunsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FunsViewController.storyboard; path = Classes/Home/PageController/FunsViewController.storyboard; sourceTree = "<group>"; };
+		7B8EA1CF1DD7268800183E9C /* RecomendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecomendViewController.swift; path = Classes/Home/PageController/RecomendViewController.swift; sourceTree = "<group>"; };
+		7B8EA1D11DD7279800183E9C /* GamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GamesViewController.swift; path = Classes/Home/PageController/GamesViewController.swift; sourceTree = "<group>"; };
+		7B8EA1D31DD727C100183E9C /* EntertainmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntertainmentViewController.swift; path = Classes/Home/PageController/EntertainmentViewController.swift; sourceTree = "<group>"; };
+		7B8EA1D51DD727D400183E9C /* FunsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunsViewController.swift; path = Classes/Home/PageController/FunsViewController.swift; sourceTree = "<group>"; };
 		89192678913759E6FF521D0F /* Pods-Ldytv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ldytv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ldytv/Pods-Ldytv.debug.xcconfig"; sourceTree = "<group>"; };
 		AB5FD7E81DC345C600ADB179 /* Ldytv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ldytv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5FD7EB1DC345C600ADB179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +132,30 @@
 				113BCC56B9DCF21307C9B915 /* Pods-Ldytv.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B8EA1BB1DD71ED700183E9C /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B8EA1BC1DD71EED00183E9C /* RGPageViewController.swift */,
+			);
+			name = PageViewController;
+			sourceTree = "<group>";
+		};
+		7B8EA1BE1DD71FE100183E9C /* PageController */ = {
+			isa = PBXGroup;
+			children = (
+				7B8EA1C51DD7227800183E9C /* HomePageViewController.swift */,
+				7B8EA1C71DD7255500183E9C /* RecomendViewController.storyboard */,
+				7B8EA1C91DD725CC00183E9C /* GamesViewController.storyboard */,
+				7B8EA1CB1DD7261700183E9C /* EntertainmentViewController.storyboard */,
+				7B8EA1CD1DD7264E00183E9C /* FunsViewController.storyboard */,
+				7B8EA1CF1DD7268800183E9C /* RecomendViewController.swift */,
+				7B8EA1D11DD7279800183E9C /* GamesViewController.swift */,
+				7B8EA1D31DD727C100183E9C /* EntertainmentViewController.swift */,
+				7B8EA1D51DD727D400183E9C /* FunsViewController.swift */,
+			);
+			name = PageController;
 			sourceTree = "<group>";
 		};
 		AB5FD7DF1DC345C600ADB179 = {
@@ -200,6 +244,7 @@
 		AB8806151DC6E45B00487318 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7B8EA1BE1DD71FE100183E9C /* PageController */,
 				AB6DB3401DC86D3C0073C1A7 /* Home.storyboard */,
 				AB6DB3411DC86D3C0073C1A7 /* HomeViewController.swift */,
 			);
@@ -236,6 +281,7 @@
 		AB8806191DC6E4AE00487318 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				7B8EA1BB1DD71ED700183E9C /* PageViewController */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -311,15 +357,18 @@
 				TargetAttributes = {
 					AB5FD7E71DC345C600ADB179 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					AB5FD7FB1DC345C600ADB179 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AB5FD7E71DC345C600ADB179;
 					};
 					AB5FD8061DC345C600ADB179 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AB5FD7E71DC345C600ADB179;
 					};
@@ -352,8 +401,12 @@
 			files = (
 				AB5FD7F61DC345C600ADB179 /* LaunchScreen.storyboard in Resources */,
 				AB8806121DC6E28700487318 /* Images.xcassets in Resources */,
+				7B8EA1CA1DD725CC00183E9C /* GamesViewController.storyboard in Resources */,
 				AB5FD7F11DC345C600ADB179 /* Main.storyboard in Resources */,
 				AB6DB3451DC86D480073C1A7 /* Live.storyboard in Resources */,
+				7B8EA1C81DD7255500183E9C /* RecomendViewController.storyboard in Resources */,
+				7B8EA1CE1DD7264E00183E9C /* FunsViewController.storyboard in Resources */,
+				7B8EA1CC1DD7261700183E9C /* EntertainmentViewController.storyboard in Resources */,
 				AB6DB3421DC86D3C0073C1A7 /* Home.storyboard in Resources */,
 				AB6DB3491DC86D5E0073C1A7 /* Profile.storyboard in Resources */,
 				AB6DB3471DC86D550073C1A7 /* Follow.storyboard in Resources */,
@@ -419,7 +472,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -431,10 +484,16 @@
 			files = (
 				AB5FD7EC1DC345C600ADB179 /* AppDelegate.swift in Sources */,
 				AB8806281DC6FA0E00487318 /* MainTabBarController.swift in Sources */,
+				7B8EA1BD1DD71EED00183E9C /* RGPageViewController.swift in Sources */,
+				7B8EA1D01DD7268800183E9C /* RecomendViewController.swift in Sources */,
 				AB67A6EA1DC721FF00FDD825 /* UIBarButtonItemExtension.swift in Sources */,
 				AB6DB34D1DC86D850073C1A7 /* FollowViewController.swift in Sources */,
 				AB6DB34F1DC86D9C0073C1A7 /* ProfileViewController.swift in Sources */,
+				7B8EA1D41DD727C100183E9C /* EntertainmentViewController.swift in Sources */,
+				7B8EA1D61DD727D400183E9C /* FunsViewController.swift in Sources */,
+				7B8EA1D21DD7279800183E9C /* GamesViewController.swift in Sources */,
 				AB6DB3431DC86D3C0073C1A7 /* HomeViewController.swift in Sources */,
+				7B8EA1C61DD7227800183E9C /* HomePageViewController.swift in Sources */,
 				AB6DB34B1DC86D750073C1A7 /* LiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,7 +683,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boxfish.LdytvTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ldytv.app/Ldytv";
 			};
 			name = Debug;
@@ -638,7 +697,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boxfish.LdytvTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ldytv.app/Ldytv";
 			};
 			name = Release;
@@ -651,7 +710,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boxfish.LdytvUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = Ldytv;
 			};
 			name = Debug;
@@ -664,7 +723,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boxfish.LdytvUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = Ldytv;
 			};
 			name = Release;
