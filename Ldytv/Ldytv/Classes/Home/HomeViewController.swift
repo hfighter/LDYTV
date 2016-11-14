@@ -8,11 +8,27 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+enum LinePosition {
+    case LinePosTop
+    case LinePosBottom
+    case LinePosLeft
+    case LinePosRight
+}
 
+class HomeViewController: RGPageViewController {
+
+    let titles : [String] = ["推荐","游戏","娱乐", "趣玩"]
+    let viewControllersIdentifiers : [String] = ["RecomendViewController", "GamesViewController", "EntertainmentViewController", "FunsViewController"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        self.hightlightTitleColor = UIColor.orange
+        self.normalTitleColor = UIColor.black
+        self.delegate = self;
+        self.datasource = self;
+        self.animatingToTab = true
+        addLine(onView: self.tabbar, atPosition: .LinePosTop)
         setNavigationBar()
 //        launchScreen()
     }
@@ -20,6 +36,26 @@ class HomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+// MARK: - Override
+    override var tabbarStyle: RGTabbarStyle {
+        get {
+            return .solid
+        }
+    }
+    
+    override var tabIndicatorColor: UIColor {
+        get {
+            return UIColor.orange
+        }
+    }
+    
+    override var tabStyle: RGTabStyle {
+        get {
+            return .inactiveFaded
+        }
     }
 }
 
@@ -70,5 +106,73 @@ extension HomeViewController {
         }) { (Bool) in
             view.removeFromSuperview()
         }
+    }
+}
+
+
+// MARK: - 首页分页
+
+extension HomeViewController: RGPageViewControllerDelegate, RGPageViewControllerDataSource {
+    
+    func numberOfPagesForViewController(_ pageViewController: RGPageViewController) -> Int {
+        return titles.count
+    }
+    
+     func tabViewForPageAtIndex(_ pageViewController: RGPageViewController, index: Int) -> UIView {
+        let label : UILabel = UILabel()
+        let title : String = titles[index]
+        label.text = title
+        label.sizeToFit()
+        return label
+    }
+    
+    func viewControllerForPageAtIndex(_ pageViewController: RGPageViewController, index: Int) -> UIViewController? {
+        let identifer = viewControllersIdentifiers[index]
+        let viewController : UIViewController = UIStoryboard(name: identifer, bundle: nil
+            ).instantiateViewController(withIdentifier: identifer);
+        return viewController
+    }
+    
+    func heightForTabAtIndex(_ index: Int) -> CGFloat {
+         return 44
+    }
+    
+    func widthForTabAtIndex(_ index: Int) -> CGFloat {
+        let divided = (titles.count == 0) ? 1 : titles.count
+        return UIScreen.main.bounds.width/CGFloat(divided)
+    }
+    
+    func willChangePageToIndex(_ index: Int, fromIndex from: Int) {
+        
+    }
+    
+    func didChangePageToIndex(_ index: Int) {
+        
+    }
+    
+    func addLine(onView view: UIView, atPosition position: LinePosition)->Void {
+        let lineView: UIView
+        var x : CGFloat = 0.0
+        var y : CGFloat = 0.0
+        var width : CGFloat = view.bounds.width
+        var height : CGFloat = 0.5
+        switch (position) {
+        case .LinePosTop : break
+            
+        case .LinePosBottom:
+            y = view.bounds.height-CGFloat(0.5)
+            break
+        case .LinePosLeft:
+            width = 0.5
+            height = view.bounds.height
+            break
+        case .LinePosRight:
+            x = view.bounds.width-0.5
+            width = 0.5
+            height = view.bounds.height
+        }
+        lineView = UIView(frame: CGRect(x: x, y: y, width: width, height: height))
+        lineView.backgroundColor = UIColor.lightGray;
+        view.addSubview(lineView)
     }
 }

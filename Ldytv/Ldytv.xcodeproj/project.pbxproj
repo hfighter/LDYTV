@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7B8EA1BD1DD71EED00183E9C /* RGPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EA1BC1DD71EED00183E9C /* RGPageViewController.swift */; };
-		7B8EA1C61DD7227800183E9C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EA1C51DD7227800183E9C /* HomePageViewController.swift */; };
 		7B8EA1C81DD7255500183E9C /* RecomendViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EA1C71DD7255500183E9C /* RecomendViewController.storyboard */; };
 		7B8EA1CA1DD725CC00183E9C /* GamesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EA1C91DD725CC00183E9C /* GamesViewController.storyboard */; };
 		7B8EA1CC1DD7261700183E9C /* EntertainmentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EA1CB1DD7261700183E9C /* EntertainmentViewController.storyboard */; };
@@ -56,7 +55,6 @@
 /* Begin PBXFileReference section */
 		113BCC56B9DCF21307C9B915 /* Pods-Ldytv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ldytv.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ldytv/Pods-Ldytv.release.xcconfig"; sourceTree = "<group>"; };
 		7B8EA1BC1DD71EED00183E9C /* RGPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGPageViewController.swift; path = Classes/Tools/PageViewController/RGPageViewController.swift; sourceTree = "<group>"; };
-		7B8EA1C51DD7227800183E9C /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Classes/Home/PageController/HomePageViewController.swift; sourceTree = "<group>"; };
 		7B8EA1C71DD7255500183E9C /* RecomendViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RecomendViewController.storyboard; path = Classes/Home/PageController/RecomendViewController.storyboard; sourceTree = "<group>"; };
 		7B8EA1C91DD725CC00183E9C /* GamesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GamesViewController.storyboard; path = Classes/Home/PageController/GamesViewController.storyboard; sourceTree = "<group>"; };
 		7B8EA1CB1DD7261700183E9C /* EntertainmentViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EntertainmentViewController.storyboard; path = Classes/Home/PageController/EntertainmentViewController.storyboard; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 		7B8EA1BE1DD71FE100183E9C /* PageController */ = {
 			isa = PBXGroup;
 			children = (
-				7B8EA1C51DD7227800183E9C /* HomePageViewController.swift */,
 				7B8EA1C71DD7255500183E9C /* RecomendViewController.storyboard */,
 				7B8EA1C91DD725CC00183E9C /* GamesViewController.storyboard */,
 				7B8EA1CB1DD7261700183E9C /* EntertainmentViewController.storyboard */,
@@ -493,7 +490,6 @@
 				7B8EA1D61DD727D400183E9C /* FunsViewController.swift in Sources */,
 				7B8EA1D21DD7279800183E9C /* GamesViewController.swift in Sources */,
 				AB6DB3431DC86D3C0073C1A7 /* HomeViewController.swift in Sources */,
-				7B8EA1C61DD7227800183E9C /* HomePageViewController.swift in Sources */,
 				AB6DB34B1DC86D750073C1A7 /* LiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

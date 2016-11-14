@@ -106,6 +106,8 @@ class RGPageViewController: UIViewController, UIPageViewControllerDataSource, UI
         }
     }
     var tabScrollView: UICollectionView!
+    var hightlightTitleColor : UIColor?
+    var normalTitleColor : UIColor?
     
     // MARK: - Constructors
     required init?(coder aDecoder: NSCoder) {
@@ -405,6 +407,9 @@ class RGPageViewController: UIViewController, UIPageViewControllerDataSource, UI
             
             tabViewContent.center = tabView.center
             
+            tabView.selectedColor = hightlightTitleColor
+            tabView.normalColor = normalTitleColor
+            
             return tabView
         }
         
@@ -468,6 +473,7 @@ class RGPageViewController: UIViewController, UIPageViewControllerDataSource, UI
                 }
                 
                 tabScrollView.selectItem(at: IndexPath(row: index, section: 0), animated: animated, scrollPosition: scrollPosition)
+                
                 tabScrollView.scrollRectToVisible(newTabRect, animated: animated)
             }
             
@@ -849,8 +855,10 @@ private class RGTabView: UIView {
                 if style == .inactiveFaded {
                     if selected {
                         alpha = 1.0
+                        setSubviewsTintColor(selectedColor!)
                     } else {
                         alpha = 0.566
+                        setSubviewsTintColor(normalColor!)
                     }
                 }
                 
@@ -862,6 +870,8 @@ private class RGTabView: UIView {
     var indicatorColor: UIColor = UIColor.lightGray
     var orientation: RGTabOrientation = .horizontal
     var style: RGTabStyle = .none
+    var selectedColor : UIColor?
+    var normalColor : UIColor?
     
     init(frame: CGRect, indicatorColor: UIColor, indicatorHW: CGFloat, style: RGTabStyle, orientation: RGTabOrientation) {
         super.init(frame: frame)
@@ -885,6 +895,14 @@ private class RGTabView: UIView {
         
         if style == .inactiveFaded {
             alpha = 0.566
+        }
+    }
+    
+    func setSubviewsTintColor(_ tintColor : UIColor) {
+        for view in self.subviews {
+            if view is UILabel {
+                (view as! UILabel).textColor = tintColor
+            }
         }
     }
     
